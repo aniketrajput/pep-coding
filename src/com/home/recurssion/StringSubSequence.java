@@ -15,6 +15,7 @@ public class StringSubSequence {
         System.out.println(res);
     }
 
+    //Check book for expectation and Faith
     private static ArrayList<String> getSubSequence(String str) {
         if (str.length() == 0) {
             ArrayList<String> bres = new ArrayList<>();
@@ -22,5 +23,18 @@ public class StringSubSequence {
             return bres;
         }
 
+        char ch = str.charAt(0);    //a
+        String restOfStr = str.substring(1);  //bc
+        ArrayList<String> rres = getSubSequence(restOfStr);
+
+        ArrayList<String> mres = new ArrayList<>();
+        for (String rstr: rres) {
+            mres.add("" + rstr);
+        }
+
+        for (String rstr: rres) {
+            mres.add(ch + rstr);
+        }
+        return mres;
     }
 }
