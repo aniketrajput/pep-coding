@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //Expection 678 - will return 24 strs. Faith is 78 will return 6 strs. EF - for each character of 6 combine with each of 6 strs, we will get total 24 strs.
-public class KeypadCombination {
+public class GetKeypadCombination {
     public static final Scanner scan = new Scanner(System.in);
 
-    public static void findSubsequence() {
+    public static void keypadCombination() {
         System.out.println("Enter String: ");
         String str = scan.next();
 
