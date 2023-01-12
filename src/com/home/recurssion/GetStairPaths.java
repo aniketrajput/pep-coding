@@ -3,7 +3,7 @@ package com.home.recurssion;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GetStairsPaths {
+public class GetStairPaths {
 
     public static final Scanner scan = new Scanner(System.in);
 
