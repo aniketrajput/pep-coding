@@ -61,6 +61,4 @@ public class GetMazePaths {
 
         return paths;
     }
-
-
 }
