@@ -3,7 +3,8 @@ package com.home.recurssion;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GetMazePathsWithDiagonalPaths {
+//Can go either vertical, horizontal or diagonal. At on time it can make jump of either one or more steps but within limit.
+public class GetMazePathsWithJumps {
     public static final Scanner scan = new Scanner(System.in);
 
     public static void getMazePathWithDiagonalPaths() {
