@@ -1,6 +1,7 @@
 package com.home;
 
 import com.home.dynammicprogramming.ClimbingStairs;
+import com.home.dynammicprogramming.ClimbingStairsVariableJumps;
 import com.home.dynammicprogramming.Fibonacci;
 import com.home.recurssion.*;
 
@@ -10,6 +11,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        ClimbingStairs.climbingStairsCount();
+        ClimbingStairsVariableJumps.climbingStairsCount();
     }
 }

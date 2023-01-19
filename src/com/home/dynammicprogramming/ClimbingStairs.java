@@ -2,6 +2,7 @@ package com.home.dynammicprogramming;
 
 import java.util.Scanner;
 
+//Climbing or going down the stairs. We are going from up to down
 public class ClimbingStairs {
     public static final Scanner scan = new Scanner(System.in);
 
