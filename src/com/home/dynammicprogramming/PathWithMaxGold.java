@@ -11,8 +11,10 @@ public class PathWithMaxGold {
     public static void goldmine() {
         System.out.println("Enter n: ");
         int n = scan.nextInt();
+
         System.out.println("Enter m: ");
         int m = scan.nextInt();
+
         int[][] arr = new int[n][m];
 
         System.out.println("Enter n*m elements: ");
