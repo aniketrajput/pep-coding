@@ -32,7 +32,7 @@ public class ZeroOneKnapsack {
     private static void displayMaxPossibleValue(int[] weights, int[] values, int capacity) {
         int[][] dp = new int[weights.length + 1][capacity + 1];
 
-        for (int i = 1; i < dp.length; i++) {           //0th row and 0th column are zero
+        for (int i = 1; i < dp.length; i++) {           //0th row and 0th column are zero, start from dp[1][1]
             for (int j = 1; j < dp[0].length; j++) {
 
                 if (j >= weights[i-1]) {       //if weight is less than/ equal to capacity then only it can be included. Or if capacity is greater than/ equal to weight then only weight will be included
