@@ -1,7 +1,5 @@
-package com.home.recurssion;
+package com.home.recurssionbacktracting;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class AllIndexesOccurrenceInArray {

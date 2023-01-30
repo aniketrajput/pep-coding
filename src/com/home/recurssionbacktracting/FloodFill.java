@@ -1,4 +1,4 @@
-package com.home.recurssion;
+package com.home.recurssionbacktracting;
 
 import java.util.Scanner;
 

@@ -1,7 +1,6 @@
-package com.home.recurssion;
+package com.home.recurssionbacktracting;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringSubSequence {

@@ -1,6 +1,5 @@
-package com.home.recurssion;
+package com.home.recurssionbacktracting;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 //Can go either vertical, horizontal or diagonal. At on time it can make jump of either one or more steps but within limit.

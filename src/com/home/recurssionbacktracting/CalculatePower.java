@@ -1,14 +1,10 @@
-package com.home.recurssion;
+package com.home.recurssionbacktracting;
 
 /*
 * Calculate power(x, n) using Recursion
 *
 * */
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.Base64;
 import java.util.Scanner;
 
 public class CalculatePower {
