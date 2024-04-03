@@ -35,7 +35,7 @@ if not return false (name = aabbc, typed= aabbccd)
 */
 
 
-public class FaultyKeyboardLeetcode925 {
+public class FaultyKeyboard_LC_925 {
 
     public static boolean isLongPressedName(String name, String typed) {
         if (name.length() > typed.length())             //if name is greater than typed, both can never be same

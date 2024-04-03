@@ -23,7 +23,7 @@ Output format -
 
 */
 
-public class RangeAdditionLC370 {
+public class RangeAddition_LC_370 {
 
     public static int[] getModifiedArray(int length, int[][] queries) {
         int[] resultArr = new int[length];

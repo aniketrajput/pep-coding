@@ -4,7 +4,7 @@ package com.home.arrays_and_string_level2;
 Check notebook for analysis
 */
 
-public class SquaresOfSortedArrayLC977 {
+public class SquaresOfSortedArray_LC_977 {
 
     public static int[] sortedSquares(int[] nums) {
         int[] resultArr = new int[nums.length];

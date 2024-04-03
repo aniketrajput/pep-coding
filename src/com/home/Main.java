@@ -1,13 +1,11 @@
 package com.home;
 
-import com.home.arrays_and_string_level2.FaultyKeyboardLeetcode925;
-import com.home.arrays_and_string_level2.RangeAdditionLC370;
-import com.home.hashmap_heaps_level1.genericpriorityqueue.PriorityQueueUsingGenericHeap;
-import com.home.hashmap_heaps_level1.genericpriorityqueue.Student;
-import com.home.hashmap_heaps_level1.genericpriorityqueue.StudentHeightComparator;
+import com.home.arrays_and_string_level2.MajorityElementGeneral_K;
+import com.home.arrays_and_string_level2.MajorityElement_1;
 
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -17,14 +15,18 @@ public class Main {
         /*System.out.println(FaultyKeyboardLeetcode925.isLongPressedName("alex", "aaleex"));
         System.out.println(FaultyKeyboardLeetcode925.isLongPressedName("saeed", "ssaaedd"));*/
 
-        int[][] queries = {
+        /*int[][] queries = {
                 {1, 3, 2},
                 {2, 4, 3},
                 {0, 2, -2}
         };
 
-        RangeAdditionLC370.getModifiedArray(5, queries);
+        RangeAdditionLC370.getModifiedArray(5, queries);*/
 
+//        MajorityElement_1.printMajorityElement(new int[] {2, 2, 2, 1, 1, 1});
+
+        ArrayList resultList = MajorityElementGeneral_K.majorityElement(new int[] {3, 1, 2, 2, 1, 2, 3, 3}, 4);
+        System.out.println(resultList);
 
 //        ----------------------------------------------HASHMAP AND HEAPS--------------------------------------------------------------------
 

@@ -4,7 +4,7 @@ package com.home.arrays_and_string_level2;
 Check notebook for analysis
 */
 
-public class ContainerWithMostWaterLC11 {
+public class ContainerWithMostWater_LC_11 {
 
     public static int maxArea(int[] height) {
         int water = 0;
