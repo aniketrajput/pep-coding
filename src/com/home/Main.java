@@ -1,9 +1,10 @@
 package com.home;
 
-import com.home.hashmapheaps.genericpriorityqueue.PriorityQueueUsingGenericHeap;
-import com.home.hashmapheaps.genericpriorityqueue.Student;
-import com.home.hashmapheaps.genericpriorityqueue.StudentHeightComparator;
-import com.home.hashmapheaps.genericpriorityqueue.StudentWeightComparator;
+import com.home.arrays_and_string_level2.FaultyKeyboardLeetcode925;
+import com.home.arrays_and_string_level2.RangeAdditionLC370;
+import com.home.hashmap_heaps_level1.genericpriorityqueue.PriorityQueueUsingGenericHeap;
+import com.home.hashmap_heaps_level1.genericpriorityqueue.Student;
+import com.home.hashmap_heaps_level1.genericpriorityqueue.StudentHeightComparator;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -11,6 +12,20 @@ import java.text.ParseException;
 public class Main {
 
     public static void main(String[] args) throws IOException, ParseException {
+
+//        ---------------------------------------Arrays and Strings L2------------------------------------------------------------------------------
+        /*System.out.println(FaultyKeyboardLeetcode925.isLongPressedName("alex", "aaleex"));
+        System.out.println(FaultyKeyboardLeetcode925.isLongPressedName("saeed", "ssaaedd"));*/
+
+        int[][] queries = {
+                {1, 3, 2},
+                {2, 4, 3},
+                {0, 2, -2}
+        };
+
+        RangeAdditionLC370.getModifiedArray(5, queries);
+
+
 //        ----------------------------------------------HASHMAP AND HEAPS--------------------------------------------------------------------
 
         /*
@@ -75,6 +90,7 @@ public class Main {
         System.out.println(hm.containsKey("Germany"));
         System.out.println("---------------------");
         hm.display();*/
+/*
 
         Student s1 = new Student(1, 180, 100);
         Student s2 = new Student(2, 190, 120);
@@ -96,6 +112,7 @@ public class Main {
             System.out.println(pq.peek());
             pq.remove();
         }
+*/
 
 //        ---------------------------------------GENERIC TREE------------------------------------------------------------------------------
 
