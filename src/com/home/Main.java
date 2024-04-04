@@ -2,6 +2,7 @@ package com.home;
 
 import com.home.arrays_and_string_level2.MajorityElementGeneral_K;
 import com.home.arrays_and_string_level2.MajorityElement_1;
+import com.home.arrays_and_string_level2.NextGreaterElement_III_LC_556;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -25,8 +26,9 @@ public class Main {
 
 //        MajorityElement_1.printMajorityElement(new int[] {2, 2, 2, 1, 1, 1});
 
-        ArrayList resultList = MajorityElementGeneral_K.majorityElement(new int[] {3, 1, 2, 2, 1, 2, 3, 3}, 4);
-        System.out.println(resultList);
+        /*ArrayList resultList = MajorityElementGeneral_K.majorityElement(new int[] {3, 1, 2, 2, 1, 2, 3, 3}, 4);
+        System.out.println(resultList);*/
+
 
 //        ----------------------------------------------HASHMAP AND HEAPS--------------------------------------------------------------------
 
