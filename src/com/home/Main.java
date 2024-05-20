@@ -1,16 +1,29 @@
 package com.home;
 
-import com.home.arrays_and_string_level2.MajorityElementGeneral_K;
-import com.home.arrays_and_string_level2.MajorityElement_1;
-import com.home.arrays_and_string_level2.NextGreaterElement_III_LC_556;
+import com.home.arrays_and_string_level_2.MinimumNumberOfPlatform;
+import com.home.binary_trees_level_1.ConstructBinaryTree;
+import com.home.binary_trees_level_1.DisplayBinaryTree;
+import com.home.binary_trees_level_1.Node;
+import com.home.leetcode_easy_collection.MaximumSubArray_LC_53;
+import com.home.leetcode_easy_collection.TwoSumII_LC_167;
+import com.home.programs.Java_8_Syntax;
+import com.home.searching_sorting.MinimumInSortedRotatedArray_LC_153;
+import com.home.searching_sorting.SearchInRotatedArray_LC_33;
 
 import java.io.IOException;
 import java.text.ParseException;
-import java.util.ArrayList;
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Main {
 
     public static void main(String[] args) throws IOException, ParseException {
+        //        ---------------------------------------Binary Trees L1------------------------------------------------------------------------------
+
+//        Node root = ConstructBinaryTree.constructBinaryTree();
+//        DisplayBinaryTree.display(root);
 
 //        ---------------------------------------Arrays and Strings L2------------------------------------------------------------------------------
         /*System.out.println(FaultyKeyboardLeetcode925.isLongPressedName("alex", "aaleex"));
@@ -186,5 +199,220 @@ public class Main {
 //        PrintPreorderPostorder.print(root);
 
 
+
+// ---------------------------------------------------------------------WIPRO HSBC INTERVIEW----------------------------------------------------------------------------------------------------------
+
+        /*List<String> stationeryList = new ArrayList<>(Arrays.asList("Pen", "Eraser", "Note book", "Pen", "Pencil", "Stapler"));
+        long c = stationeryList.stream().filter(s -> s.equals("Pen")).count();
+        System.out.println(c);
+
+//        List< String> stationeryListNew = new ArrayList<>(stationeryList);
+        stationeryList.add("box");
+
+        System.out.println(stationeryList);*/
+
+        /*
+        //static method will be called and execute with static class null reference
+
+        Main m = null;
+        m.m1();*/
+
+// ---------------------------------------------------------------------JAVA 8 SYNTAX----------------------------------------------------------------------------------------------------------
+
+        /**
+         * Separate odd and even numbers in a list of integers.
+         *
+         * Given a list of integers, write a Java 8 program to separate
+         * the odd and even numbers into two separate lists.
+         */
+
+//        Java_8_Syntax.separationOfEvenOddNumberInMap();
+//        Java_8_Syntax.separationOfEvenOddNumberInList();
+
+
+        /**
+         * Remove duplicate elements from a list using Java 8 streams
+         *
+         * Write a Java 8 program to remove duplicate elements from a list
+         * using the stream API and lambda expressions.
+         */
+
+//        Java_8_Syntax.removeDuplicateFromList();
+
+        /**
+         * Find the frequency of each character in a string using Java 8 streams
+         *
+         * Write a Java 8 program to find the frequency of each character in
+         * a given string using the stream API and collectors.
+         */
+//        Java_8_Syntax.characterFrequency();
+
+        /**
+         * Find the frequency of each element in an array or a list
+         *
+         * Write a Java 8 program to find the frequency of
+         * each element in an array or a list using streams and collectors.
+         */
+
+//        Java_8_Syntax.wordFrequency();
+
+
+        /**
+         * Sort a given list of decimals in reverse order
+         *
+         * Write a Java 8 program to sort a given list of decimal numbers in reverse order.
+         */
+
+//        Java_8_Syntax.reverseSortedList();
+
+        /**
+         * Join a list of strings with '[' as prefix, ']' as suffix, and ',' as delimiter
+         *
+         * Given a list of strings, write a Java 8 program to join the strings
+         * with '[' as a prefix, ']' as a suffix, and ',' as a delimiter.
+         */
+
+//        Java_8_Syntax.joinListOfStrings();
+
+
+        /**
+         * Print the numbers from a given list of integers that are multiples of 5
+         *
+         * Write a Java 8 program to print the numbers from a given list of integers that are multiples of 5.
+         */
+
+//        Java_8_Syntax.multipleOf5();
+
+        /**
+         * Find the maximum and minimum of a list of integers
+         * Given a list of integers, write a Java 8 program to find the maximum and minimum numbers in the list.
+         */
+
+//        Java_8_Syntax.minMaxFromList();
+
+
+        /**
+         * Merge two unsorted arrays into a single sorted array using Java 8 streams
+         * Write a Java 8 program to merge two unsorted arrays into a single-sorted array using the stream API.
+         */
+//        Java_8_Syntax.mergeUnsortedArrayIntoSorted();
+
+        /**
+         * Merge two unsorted arrays into a single sorted array without duplicates
+         * Write a Java 8 program to merge two unsorted arrays into a single-sorted array without duplicates.
+         */
+//        Java_8_Syntax.mergeUnsortedArrayIntoSortedWithoutDuplicate();
+
+
+        /**
+         * Get the three maximum and three minimum numbers from a given list of integers
+         *
+         * Write a Java 8 program to get the three maximum and three minimum numbers from a given list of integers.
+         */
+
+//        Java_8_Syntax.min3max3();
+
+        /**
+         * Check if two strings are anagrams or not using Java 8 streams
+         * Write a Java 8 program to check if two strings are anagrams or not using the stream API and lambda expressions.
+         */
+
+//        Java_8_Syntax.isAnagram();
+//        Java_8_Syntax.isAnagram2();
+
+
+        /**
+         * Find the sum of all digits of a number in Java 8
+         *
+         * Write a Java 8 program to find the sum of all digits of a given number.
+         *
+         */
+//        Java_8_Syntax.sumOf();
+
+
+        /**
+         * Find the second-largest number in an integer array
+         *
+         * Write a Java 8 program to find the second-largest number in an integer array.
+         */
+//        Java_8_Syntax.secondLargestNumberFromList();
+
+        /**
+         * Sort a list of strings according to the increasing order of their length
+         *
+         * Write a Java 8 program to sort a given list of strings according to the increasing order of their length.
+         */
+//        Java_8_Syntax.sortByLengthOfList();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        findMissingNumber();
+
+        /*int index = SearchInRotatedArray_LC_33.find(new int[] {4, 5, 6, 7, 8, 9, 10, 1, 2}, 10);
+        System.out.println(index);*/
+/*
+
+        int index = MinimumInSortedRotatedArray_LC_153.findMin(new int[] {4, 5, 6, 7, 8, 9, 10, 1, 2});
+        System.out.println(index);
+*/
+/*
+        int noOfPlatform = MinimumNumberOfPlatform.findPlatform();
+        System.out.println(noOfPlatform);*/
+
+        /*int sum = MaximumSubArray_LC_53.printSubArrayWithMaxSum(new int[] {-2,1,-3,4,-1,2,1,-5,4});
+        System.out.println(sum);*/
+
+        TwoSumII_LC_167.twoSum(new int[] {5,25,75}, 100);
     }
+
+    public static void findMissingNumber() {
+        int[] arr = new int[] {1, 3, 4, 5, 6, 7, 8, 9, 10};
+        int [] res = new int[] {1, 3, 4, 5, 6, 7, 8, 9, 10, 2};
+
+        for (int i = 0; i <= res.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (res[i] == arr[j]) {
+                    res[i] = -1;
+                }
+            }
+        }
+
+        for (int i = 0; i < res.length; i++) {
+            if (res[i] != -1) {
+                System.out.println(res[i]);
+            }
+        }
+
+    }
+
+
+
 }
