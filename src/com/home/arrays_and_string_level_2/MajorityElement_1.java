@@ -2,6 +2,8 @@ package com.home.arrays_and_string_level_2;
 
 /*
 
+Check Program MajorityElement_LC_169, has detailed analysis and also other solutions.
+
 Check notebook for analysis.
 
 There can be only one element with more than half frequency. That is why we find potential candidate.
@@ -46,6 +48,8 @@ public class MajorityElement_1 {
         }
     }
 
+//Check Program MajorityElement_LC_169, has detailed analysis and also other solutions.
+
     private static int findPotentialCandidate(int[] arr) {
         int value = arr[0];
         int count = 1;
@@ -68,3 +72,4 @@ public class MajorityElement_1 {
     }
 
 }
+//    Check Program MajorityElement_LC_169, has detailed analysis and also other solutions.
