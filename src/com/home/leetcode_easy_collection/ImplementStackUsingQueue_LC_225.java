@@ -35,27 +35,88 @@ Constraints:
 
 */
 
-public class ImplementStackUsingQueue_LC_225 {
+import java.util.LinkedList;
+import java.util.Queue;
 
+public class ImplementStackUsingQueue_LC_225 {
+/*
+
+    //2 Queue Approach =>
+
+    Queue<Integer> q1 = new LinkedList<>();
+    Queue<Integer> q2 = new LinkedList<>();
 
     public ImplementStackUsingQueue_LC_225() {
 
     }
 
     public void push(int x) {
-
+        q1.add(x);
     }
 
     public int pop() {
+        while (q1.size() != 1) {
+            q2.add(q1.poll());
+        }
+        int res = q1.poll();
 
+        Queue<Integer> temp = q2;
+        q2 = q1;
+        q1 = temp;
+
+        return res;
     }
 
     public int top() {
+        while (q1.size() != 1) {
+            q2.add(q1.poll());
+        }
+        int res = q1.poll();
+        q2.add(res);
 
+        Queue<Integer> temp = q2;
+        q2 = q1;
+        q1 = temp;
+
+        return res;
     }
 
     public boolean empty() {
+        if (q1.size() == 0 && q2.size() == 0)
+            return true;
+        else
+            return false;
+    }
 
+    */
+
+
+    //Single Queue Approach =>
+
+    Queue<Integer> q1 = new LinkedList<>();
+
+    public ImplementStackUsingQueue_LC_225() {
+
+    }
+
+    public void push(int x) {
+        q1.add(x);
+
+        for (int i = 0; i < q1.size() - 1; i++) {
+            q1.add(q1.poll());
+        }
+    }
+
+    public int pop() {
+        return q1.poll();
+    }
+
+    public int top() {
+        return q1.peek();
+    }
+
+    public boolean empty() {
+        return q1.isEmpty();
     }
 }
 
