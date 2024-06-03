@@ -4,6 +4,7 @@ import com.home.arrays_and_string_level_2.MinimumNumberOfPlatform;
 import com.home.binary_trees_level_1.ConstructBinaryTree;
 import com.home.binary_trees_level_1.DisplayBinaryTree;
 import com.home.binary_trees_level_1.Node;
+import com.home.leetcode_easy_collection.FindNumbersDisappearedInArray_LC_448;
 import com.home.leetcode_easy_collection.MaximumSubArray_LC_53;
 import com.home.leetcode_easy_collection.TwoSumII_LC_167;
 import com.home.programs.Java_8_Syntax;
@@ -390,7 +391,9 @@ public class Main {
         /*int sum = MaximumSubArray_LC_53.printSubArrayWithMaxSum(new int[] {-2,1,-3,4,-1,2,1,-5,4});
         System.out.println(sum);*/
 
-        TwoSumII_LC_167.twoSum(new int[] {5,25,75}, 100);
+//        TwoSumII_LC_167.twoSum(new int[] {5,25,75}, 100);
+
+        FindNumbersDisappearedInArray_LC_448.findDisappearedNumbers(new int[] {4, 3, 2, 7, 8, 2, 3, 1});
     }
 
     public static void findMissingNumber() {
