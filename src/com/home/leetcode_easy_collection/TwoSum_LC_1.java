@@ -47,7 +47,7 @@ Given an array of integers nums and an integer target, return indices of the two
             left + right < target, do left++
             left + right == target, we got the target, print, can also do left-- and right++ to find next combinations
 
-        But this apporach is good when we need to find two values, in problem we need to find indices so this approach won't work.
+        But this approach is good when we need to find two values, in problem we need to find indices so this approach won't work.
 
     - We can create a new array of Pair class.
         class Pair implements Comparable<Pair> {
