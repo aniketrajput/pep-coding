@@ -35,6 +35,10 @@ public class Subsets_II_LC_90 {
 
         return resultList;
     }
+/*
+
+//In this function we are allowing to form duplicate subsets and then before adding it in final ResultList we are adding it only if resultList doesn't contains that set. This works fine but can be optimized using below new method.
+//In below new backtrack method, we will not allow to form duplicate subsets.
 
     private void backtrack(List<List<Integer>> resultList, ArrayList<Integer> tempList, int[] nums, int start) {
 
@@ -46,6 +50,27 @@ public class Subsets_II_LC_90 {
         resultList.add(new ArrayList<>(tempList));
 
         for (int i = start; i < nums.length; i++) {
+
+            //Case of including the number
+            tempList.add(nums[i]);
+
+            //Backtrack the new subset
+            backtrack(resultList, tempList, nums, i + 1);
+
+            //Case of not-including the number
+            tempList.remove(tempList.size() - 1);
+        }
+    }*/
+
+    private void backtrack(List<List<Integer>> resultList, ArrayList<Integer> tempList, int[] nums, int start) {
+
+        //Add the set to resultList
+        resultList.add(new ArrayList<>(tempList));
+
+        for (int i = start; i < nums.length; i++) {
+
+            if(i > start && nums[i] == nums[i-1])
+                continue;
 
             //Case of including the number
             tempList.add(nums[i]);
