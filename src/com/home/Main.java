@@ -1,6 +1,7 @@
 package com.home;
 
 import com.home.leetcode_easy.BaseballGame_LC_682;
+import com.home.leetcode_medium.MaximumProductSubArray_LC_152;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -382,7 +383,10 @@ public class Main {
 
 //        FindNumbersDisappearedInArray_LC_448.findDisappearedNumbers(new int[] {4, 3, 2, 7, 8, 2, 3, 1});
 
-        BaseballGame_LC_682.calPoints(new String[]{"5","2","C","D","+"});
+//        BaseballGame_LC_682.calPoints(new String[]{"5","2","C","D","+"});
+
+        MaximumProductSubArray_LC_152.maxProduct(new int[] {0,10,10,10,10,10,10,10,10,10,-10,10,10,10,10,10,10,10,10,10,0});
+
     }
 
     public static void findMissingNumber() {
