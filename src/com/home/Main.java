@@ -3,6 +3,7 @@ package com.home;
 import com.home.leetcode_easy.BaseballGame_LC_682;
 import com.home.leetcode_medium.Course_Schedule_LC_207;
 import com.home.leetcode_medium.MaximumProductSubArray_LC_152;
+import com.home.leetcode_medium.SearchInRotatedSortedArray_LC_33;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -388,9 +389,11 @@ public class Main {
 
 //        MaximumProductSubArray_LC_152.maxProduct(new int[] {0,10,10,10,10,10,10,10,10,10,-10,10,10,10,10,10,10,10,10,10,0});
 
-        Course_Schedule_LC_207.canFinish(2, new int[][]{
+        /*Course_Schedule_LC_207.canFinish(2, new int[][]{
                 {1,0},{0,1}
-        });
+        });*/
+
+        SearchInRotatedSortedArray_LC_33.search(new int[] {1}, 0);
     }
 
     public static void findMissingNumber() {
