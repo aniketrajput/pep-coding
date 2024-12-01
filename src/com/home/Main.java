@@ -8,6 +8,8 @@ import com.home.leetcode_medium.SearchInRotatedSortedArray_LC_33;
 
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -339,33 +341,6 @@ public class Main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //        findMissingNumber();
 
         /*int index = SearchInRotatedArray_LC_33.find(new int[] {4, 5, 6, 7, 8, 9, 10, 1, 2}, 10);
@@ -396,10 +371,12 @@ public class Main {
 
 //        SearchInRotatedSortedArray_LC_33.search(new int[] {1}, 0);
 
-        LetterCombinationOfAPhoneNo_LC_17.letterCombinations("23");
+        //LetterCombinationOfAPhoneNo_LC_17.letterCombinations("23");
+
+//        reverseStringJava8();
 
     }
-
+/*
     public static void findMissingNumber() {
         int[] arr = new int[] {1, 3, 4, 5, 6, 7, 8, 9, 10};
         int [] res = new int[] {1, 3, 4, 5, 6, 7, 8, 9, 10, 2};
@@ -418,7 +395,49 @@ public class Main {
             }
         }
 
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void temp() {
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

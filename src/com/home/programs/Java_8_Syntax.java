@@ -151,7 +151,7 @@ public class Java_8_Syntax {
         List<Integer> oneToTen = of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         List<Integer> twoToTen = of(2, 3, 4, 5, 6, 7, 8, 9, 10);
         List<Integer> commonElements = oneToTen.stream()
-                .filter(twoToTen::contains)
+                .filter(twoToTen::contains)         //filter(e -> twoToTen.contains(e))
                 .toList();
         System.out.println(commonElements);
     }

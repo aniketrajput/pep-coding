@@ -53,6 +53,22 @@ public class BinaryTreeInorderTraversalIterative_LC_94 {
 
         return inOrder;
     }
+
+    public List<Integer> inorderTraversal_Recursive(TreeNode root) {
+        List<Integer> inOrder = new ArrayList<>();
+        helper(inOrder, root);
+        return inOrder;
+    }
+
+    private void helper(List<Integer> inOrder, TreeNode root) {
+        if (root == null)
+            return;
+
+        helper(inOrder, root.left);
+        inOrder.add(root.val);
+        helper(inOrder, root.right);
+    }
+
 }
 
 //Manage your own stack

@@ -40,7 +40,7 @@ Starting inserting from back in nums1. As we are inserting from back bigger numb
         There will be 3 pointers -
         p1 pointing at m - 1 (last data nums1 has)
         p2 point at n - 1 (last data nums2 has)
-        i - last element of nums1 from where we will start inserting
+        i -> last element of nums1 from where we will start inserting
 
         Compare p1 and p2 and insert bigger number at i.
 
