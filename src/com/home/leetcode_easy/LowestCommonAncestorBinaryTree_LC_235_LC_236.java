@@ -34,6 +34,12 @@ Explanation - https://www.youtube.com/watch?v=WRAJ8Q9bICM
 
 public class LowestCommonAncestorBinaryTree_LC_235_LC_236 {
 
+
+//Go with other solution for LC_235. Check solution video by Striver
+
+
+
+/*
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null)
             return null;
@@ -51,6 +57,8 @@ public class LowestCommonAncestorBinaryTree_LC_235_LC_236 {
 
         return (left != null) ? left : right;
     }
+
+*/
 
 }
 
