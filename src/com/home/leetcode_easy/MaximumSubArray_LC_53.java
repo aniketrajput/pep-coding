@@ -32,24 +32,21 @@ Given an integer array nums, find the subarray with the largest sum, and return 
 
 public class MaximumSubArray_LC_53 {
     public static int maxSubArray(int[] nums) {
-        int sum = 0;
-        int overall_max = Integer.MIN_VALUE;
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
-
-            if (sum > overall_max) {
-                overall_max = sum;
-            }
+            currSum += nums[i];
+            maxSum = Math.max(currSum, maxSum);
 
             //It doesn't make sense to take -ve sum ahead to calculate sum future with next element. Because it will only reduce the sum. If next element in -ve or +ve it will reduce the sum. So if sum becomes -ve reset to 0.
-            // Here when we are doing sum = 0, we are actually starting a new substring.
-            if (sum < 0) {
-                sum = 0;
+            // Here when we are doing sum = 0, we are actually starting a new sub-array.
+            if (currSum < 0) {
+                currSum = 0;
             }
         }
 
-        return overall_max;
+        return maxSum;
     }
 
     public static int printSubArrayWithMaxSum(int[] nums) {
