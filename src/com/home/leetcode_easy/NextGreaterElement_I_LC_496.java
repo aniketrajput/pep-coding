@@ -67,7 +67,7 @@ public class NextGreaterElement_I_LC_496 {
 /*
 
 Brute Force -
-    Iterate nums1 and have have a nested loop on nums2 and check for each element
+    Iterate nums1 and have a nested loop on nums2 and check for each element
 
 Optimal Solution -
     - In Hashmap have next greater elements for all nums2 elements
