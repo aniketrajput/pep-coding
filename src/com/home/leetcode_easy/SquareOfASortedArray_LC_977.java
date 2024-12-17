@@ -60,5 +60,10 @@ Brute force -
 
 Optimal solution -
         Using two pointers
-
+        We will get sorted solution using two pointers because -
+            Suppose we have sorted input array with -ve numbers,
+            Then after squaring each number, there will be a point where left side will be sorted and right side will be sorted.
+                eg - inputArr = [-7, -4, -1, 2, 3, 6, 10]
+                     square =   [49, 16, 1, 4, 9, 36, 100]   - here till 1 we can see array is sorted and after 1 as well array is sorted.
+            We know in this case extreme heads will be on left end (head) and right end (tail), so we will check which one is greater and put that at the end of our resultArr.
 */
